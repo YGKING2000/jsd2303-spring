@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="order" class="cn.tedu.homework.di.Order"  p:id="1" p:status="1" p:receiver="胡歌" p:address="上海">
+        <!--<property name="id" value="1"/>
+        <property name="status" value="1"/>
+        <property name="receiver" value="胡歌"/>
+        <property name="address" value="上海"/>-->
+        <property name="comment"><null/></property>
+    </bean>
+
+    <bean id="order2" class="cn.tedu.homework.di.Order">
+        <constructor-arg name="id" value="2"/>
+        <constructor-arg name="status" value="1"/>
+        <constructor-arg name="receiver" value="刘亦菲"/>
+        <constructor-arg name="address" value="北京"/>
+        <constructor-arg name="comment" value="&lt;这个商品真的很好&gt;"/>
+    </bean>
+
+    <bean id="order3" class="cn.tedu.homework.di.Order">
+        <constructor-arg name="id" value="3"/>
+        <constructor-arg name="status" value="0"/>
+        <constructor-arg name="receiver" value="梅长苏"/>
+        <constructor-arg name="address" value="长安"/>
+        <constructor-arg name="comment">
+            <value><![CDATA[<这个商品真的很好>]]></value>
+        </constructor-arg>
+    </bean>
+</beans>

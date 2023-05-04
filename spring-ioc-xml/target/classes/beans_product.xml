@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="product" class="cn.tedu.spring.exercise.Product">
+        <property name="title" value="OPPO R5"/>
+        <property name="num" value="999"/>
+        <property name="sales" value="666"/>
+        <property name="comment" value="充电五分钟，通话两小时!"/>
+        <!--<property name="comment">
+            <null/>
+        </property>-->
+    </bean>
+
+    <bean id="product2" class="cn.tedu.spring.exercise.Product">
+        <constructor-arg name="title" value="VIVO X20"/>
+        <constructor-arg name="num" value="8888"/>
+        <constructor-arg name="sales" value="7777"/>
+        <constructor-arg name="comment" value="照亮你的美!"/>
+    </bean>
+
+    <bean id="product3" class="cn.tedu.spring.exercise.Product">
+        <constructor-arg name="title">
+            <value><![CDATA[<OPPO R15>]]></value>
+        </constructor-arg>
+        <constructor-arg name="num" value="4444"/>
+        <constructor-arg name="sales" value="3333"/>
+        <constructor-arg name="comment">
+            <value><![CDATA[<倾听你的心声!>]]></value>
+        </constructor-arg>
+    </bean>
+</beans>

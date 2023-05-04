@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--<bean id="book" class="cn.tedu.spring.dibase.Book">
+        <property name="name" value="琅琊榜" />
+        <property name="author" ref="author" />
+    </bean>-->
+    <bean id="book" class="cn.tedu.spring.dibase.Book" p:name="琅琊榜" p:author-ref="author" />
+    <bean id="book2" class="cn.tedu.spring.dibase.Book" p:name="梦华录" p:author-ref="author2" />
+
+    <bean id="author" class="cn.tedu.spring.dibase.Author">
+        <property name="name" value="胡歌" />
+        <property name="age" value="18" />
+    </bean>
+    <bean id="author2" class="cn.tedu.spring.dibase.Author">
+        <property name="name" value="刘亦菲" />
+        <property name="age" value="17" />
+    </bean>
+</beans>
