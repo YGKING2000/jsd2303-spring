@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="order" class="cn.tedu.homework.di.Order2">
+        <property name="id" value="1"/>
+        <property name="title" value="真巧"/>
+        <property name="num" value="1000"/>
+        <property name="sales" value="9999"/>
+        <property name="comment">
+            <null/>
+        </property>
+    </bean>
+
+    <bean id="order2" class="cn.tedu.homework.di.Order2">
+        <constructor-arg name="id" value="2"/>
+        <constructor-arg name="title" value="OPPO"/>
+        <constructor-arg name="num" value="6666"/>
+        <constructor-arg name="sales" value="99999"/>
+        <constructor-arg name="comment" value="&lt;这个商品真的很好&gt;"/>
+    </bean>
+
+    <bean id="order3" class="cn.tedu.homework.di.Order2">
+        <constructor-arg name="id" value="3"/>
+        <constructor-arg name="title" value="VIVO"/>
+        <constructor-arg name="num" value="1000"/>
+        <constructor-arg name="sales" value="5555"/>
+        <constructor-arg name="comment">
+            <value><![CDATA[<这个商品真的很好>]]></value>
+        </constructor-arg>
+    </bean>
+</beans>
