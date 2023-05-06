@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-ioc-xml</artifactId>
+    <artifactId>spring-ioc-annotation</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -18,33 +18,16 @@
 
     <dependencies>
         <dependency>
-            <!-- 引入spring相关依赖 -->
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
             <version>5.3.24</version>
         </dependency>
 
         <dependency>
-            <!-- junit单元测试依赖 -->
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>RELEASE</version>
             <scope>compile</scope>
         </dependency>
-
-        <dependency>
-            <!-- MySQL驱动 -->
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.15</version>
-        </dependency>
-
-        <dependency>
-            <!-- 数据源，连接池依赖 -->
-            <groupId>com.alibaba</groupId>
-            <artifactId>druid</artifactId>
-            <version>1.1.21</version>
-        </dependency>
     </dependencies>
-
 </project>

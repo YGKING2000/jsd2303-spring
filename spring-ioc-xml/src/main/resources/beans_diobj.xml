@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- 员工bean对象 -->
+    <bean id="employee" class="cn.tedu.spring.diobj.Employee">
+        <property name="dept" ref="dept"/>
+        <property name="dept.name" value="技术部后端组"/>
+        <!--ref属性可以绑定bean对象的id或者name-->
+        <!--<property name="dept" ref="dept2"/>-->
+        <property name="name" value="胡歌"/>
+        <property name="salary" value="9999.99"/>
+    </bean>
+
+    <!-- 部门bean对象 -->
+    <bean id="dept" name="dept" class="cn.tedu.spring.diobj.Dept">
+        <property name="name" value="技术部"/>
+    </bean>
+
+    <bean id="employee2" class="cn.tedu.spring.diobj.Employee">
+        <property name="dept">
+            <bean class="cn.tedu.spring.diobj.Dept">
+                <property name="name" value="技术管理部"/>
+            </bean>
+        </property>
+        <property name="name" value="刘亦菲"/>
+        <property name="salary" value="19999.99"/>
+    </bean>
+</beans>

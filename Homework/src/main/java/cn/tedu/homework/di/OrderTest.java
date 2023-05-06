@@ -14,21 +14,21 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class OrderTest {
     @Test
     public void springSetTest() {
-        ApplicationContext context = new ClassPathXmlApplicationContext("beans-order.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("beans_order.xml");
         final Order order = context.getBean("order", Order.class);
         System.out.println(order);
     }
 
     @Test
     public void springConstructorTest() {
-        ApplicationContext context = new ClassPathXmlApplicationContext("beans-order.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("beans_order.xml");
         final Order order2 = context.getBean("order2", Order.class);
         System.out.println(order2);
     }
 
     @Test
     public void springCDATATest() {
-        ApplicationContext context = new ClassPathXmlApplicationContext("beans-order.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("beans_order.xml");
         final Order order3 = context.getBean("order3", Order.class);
         System.out.println(order3);
     }

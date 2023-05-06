@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--singleton: 默认模式，表示该对象是在加载容器的时候创建，且是单例的-->
+    <bean id="user" class="cn.tedu.spring.scope.User"/>
+    <!--prototype: 表示该对象是从容器中获取bean对象的时候才创建，是多例的-->
+    <bean id="user2" class="cn.tedu.spring.scope.User" scope="prototype"/>
+</beans>

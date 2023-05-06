@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="student1" class="cn.tedu.spring.dilistmap.Student">
+        <property name="name" value="胡歌"/>
+        <property name="age" value="18"/>
+    </bean>
+    <bean id="student2" class="cn.tedu.spring.dilistmap.Student">
+        <property name="name" value="刘亦菲"/>
+        <property name="age" value="17"/>
+    </bean>
+    <bean id="teacher" class="cn.tedu.spring.dilistmap.Teacher">
+        <property name="name" value="酒剑仙"/>
+        <property name="studentList">
+            <list>
+                <ref bean="student1"/>
+                <ref bean="student2"/>
+            </list>
+        </property>
+    </bean>
+</beans>

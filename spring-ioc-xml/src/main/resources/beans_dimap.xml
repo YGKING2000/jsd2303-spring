@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="student" class="cn.tedu.spring.dilistmap.Student">
+        <property name="name" value="景天"/>
+        <property name="age" value="18"/>
+        <property name="teacherMap">
+            <map>
+                <entry key="001" value="李逍遥"/>
+                <entry key="002" value="清微道长"/>
+            </map>
+        </property>
+    </bean>
+</beans>
