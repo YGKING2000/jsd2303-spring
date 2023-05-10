@@ -34,7 +34,7 @@ public class TeacherTest {
     public void utilSetTest() {
         ApplicationContext context = new ClassPathXmlApplicationContext("beans_diutil.xml");
         final Student student = context.getBean("student", Student.class);
-        System.out.println(student);
+        System.out.println(student);//
     }
 
     // 利用命名空间p属性set注入属性

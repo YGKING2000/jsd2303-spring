@@ -8,11 +8,17 @@
         <property name="author" ref="author" />
     </bean>-->
     <bean id="book" class="cn.tedu.spring.dibase.Book" p:name="琅琊榜" p:author-ref="author" />
-    <bean id="book2" class="cn.tedu.spring.dibase.Book" p:name="梦华录" p:author-ref="author2" />
+    <!--<bean id="book2" class="cn.tedu.spring.dibase.Book" p:name="梦华录" p:author-ref="author2" />-->
 
     <bean id="author" class="cn.tedu.spring.dibase.Author">
         <property name="name" value="胡歌" />
         <property name="age" value="18" />
+    </bean>
+    <bean id="book2" class="cn.tedu.spring.dibase.Book">
+        <constructor-arg name="name" value="仙剑奇侠传"/>
+        <constructor-arg name="author">
+            <null/>
+        </constructor-arg>
     </bean>
     <bean id="author2" class="cn.tedu.spring.dibase.Author">
         <property name="name" value="刘亦菲" />

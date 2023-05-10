@@ -14,7 +14,7 @@ public class UserTest {
     public static void main(String[] args) {
         /* 一、spring创建对象 */
         // 1.加载spring配置文件(beans.xml)，在这一步user对象就已经被创建了
-        ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("bean.xml");
         // 2.获取spring创建的对象
         User user = (User) context.getBean("user");
         // 3.调用add()方法

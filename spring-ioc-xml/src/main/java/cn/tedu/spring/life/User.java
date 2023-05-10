@@ -27,10 +27,6 @@ public class User {
         System.out.println("3.初始化bean对象");
     }
 
-    public void init2() {
-        System.out.println("3.初始化bean对象");
-    }
-
     public void run() {
         System.out.println("4.使用阶段调用run()方法");
     }

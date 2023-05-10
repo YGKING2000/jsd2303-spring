@@ -25,6 +25,6 @@ public class EmployeeTest {
     public void beanTest2() {
         ApplicationContext context = new ClassPathXmlApplicationContext("beans_diobj.xml");
         final Employee employee2 = context.getBean("employee2", Employee.class);
-        System.out.println(employee2);
+        System.out.println(employee2);// Employee{dept=Dept{name='技术管理部'}, name='刘亦菲', salary=19999.99}
     }
 }
