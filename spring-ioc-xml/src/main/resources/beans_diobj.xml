@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
     <!-- 员工bean对象 -->
     <bean id="employee" class="cn.tedu.spring.diobj.Employee">
-        <property name="dept" ref="dept"/>
+        <property name="dept" ref="dept2"/>
         <property name="dept.name" value="技术部后端组"/>
         <!--ref属性可以绑定bean对象的id或者name-->
         <!--<property name="dept" ref="dept2"/>-->
@@ -13,7 +15,7 @@
     </bean>
 
     <!-- 部门bean对象 -->
-    <bean id="dept" name="dept" class="cn.tedu.spring.diobj.Dept">
+    <bean id="dept2" name="dept2" class="cn.tedu.spring.diobj.Dept">
         <property name="name" value="技术部"/>
     </bean>
 

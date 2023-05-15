@@ -2,7 +2,7 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="dept" class="cn.tedu.spring.autowire.Dept">
+    <bean id="dept3" class="cn.tedu.spring.autowire.Dept">
         <property name="name" value="技术部"/>
     </bean>
     <bean id="dept2" class="cn.tedu.spring.autowire.Dept">

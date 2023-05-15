@@ -16,6 +16,6 @@ public class TestEmployee {
     public void autowireTest() {
         ApplicationContext context = new ClassPathXmlApplicationContext("beans_autowire.xml");
         Employee employee = context.getBean("employee", Employee.class);
-        System.out.println(employee);
+        System.out.println(employee);// Employee{name='胡歌', dept=Dept{name='技术部'}}
     }
 }

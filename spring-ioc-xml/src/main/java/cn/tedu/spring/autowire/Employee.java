@@ -10,23 +10,13 @@ package cn.tedu.spring.autowire;
 public class Employee {
     private String name;
     private Dept dept;
-    private Person person;
 
     @Override
     public String toString() {
         return "Employee{" +
                 "name='" + name + '\'' +
                 ", dept=" + dept +
-                ", person=" + person +
                 '}';
-    }
-
-    public Person getPerson() {
-        return person;
-    }
-
-    public void setPerson(Person person) {
-        this.person = person;
     }
 
     public String getName() {
